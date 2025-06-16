@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 14, 39, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 123, 255, 0.3);
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+header h3 {
+    font-size: 1.8rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(45deg, #00d4ff, #0066ff);
+    background-clip: text;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .links{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 30px;
+}
