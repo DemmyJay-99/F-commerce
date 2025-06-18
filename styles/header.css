@@ -25,21 +25,83 @@ header h3 {
     background-clip: text;
 }
 
-nav {
+.nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav .links{
+.nav .links{
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-nav a {
+.nav a {
     font-size: 1rem;
     text-decoration: none;
     color: #fff;
     margin-right: 30px;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.list {
+    list-style-image: ;
+}
+
+details{
+    width: fit-content;
+    animation: scalein 5.2s ease-out forwards;
+}
+
+details summary{
+    list-style: none;
+}
+
+ul {
+        animation: scalein 2s ease-out forwards;
+}
+
+li {
+    list-style-type: none;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+@keyframes scalein {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+
+    25% {
+        opacity: .5;
+        transform: scale(.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(2);
+    }
+}
+
+@media (max-width: 780px) {
+    .mobile-menu{
+        display: inline;
+    }
+    .nav {
+        display: none;
+    }
+    header{
+     background: #fff;
+    }
 }
