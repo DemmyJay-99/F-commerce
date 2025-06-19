@@ -38,10 +38,26 @@ header .gadgets, .mobile-menu h3 {
 }
 
 .menu a {
+    position: relative;
     font-size: 1rem;
     text-decoration: none;
     color: #fff;
     margin-right: 30px;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* position right under the text */
+  width: 0%;
+  height: 2px;
+  background-color: rgb(45, 79, 202);
+  transition: width 0.4s ease;
+}
+
+.menu a:hover::after{
+    width: 100%;
 }
 
 summary, li {
