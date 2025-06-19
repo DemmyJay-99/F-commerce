@@ -60,6 +60,10 @@ header .gadgets, .mobile-menu h3 {
     width: 100%;
 }
 
+.menu a:hover{
+    color: blue;
+}
+
 summary, li {
     list-style: none;
 }
