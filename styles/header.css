@@ -53,6 +53,14 @@ hamburger{
     width: 50px;
 }
 
+.mobile-menu{
+    display: none;
+}
+
+.details-container{
+    display: none;
+}
+
 .mobile-menu h3 {
     display: none;
 }
@@ -72,5 +80,4 @@ ul {
     .menu{
         display: none;
     }
-
 }
