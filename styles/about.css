@@ -230,6 +230,85 @@ section h1{
     animation: boom 2s infinite ;
 }
 
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.contacts .title{
+    margin-top: 0;
+}
+
+.contacts h1{
+    margin-top: 0;
+}
+
+.contacts spam{
+    text-align: center;
+}
+
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.email {
+    color: #fff;
+    outline: #07177f;
+    border: 1px solid transparent;
+    padding: 14px;
+    background-color: #47266b;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0px 0px 5px 1px rgb(151, 65, 65);
+    transition: all .5s;
+}
+
+.email:focus{
+    box-shadow: 1px 1px 5px 0px rgb(255, 255, 255);
+}
+
+.subscribe {
+    border-radius: 20px;
+    padding: 14px;
+    border: 1px solid transparent;
+    background: linear-gradient(45deg, blue,white);
+    color: #425b91;
+    width: calc(16px *7);
+    transition: all .5s;
+}
+
+.subscribe:hover {
+    box-shadow: 3px 1px 5px 3px rgba(149, 37, 223, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .products, .categories {
         padding: 10px 20px;
