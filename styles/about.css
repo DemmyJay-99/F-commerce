@@ -100,7 +100,7 @@ section.is-visible {
     margin-bottom: 40px;
 }
 
-.products h1{
+section h1{
     display: flex;
     justify-self: center;
     /* margin: 50px; */
@@ -109,13 +109,13 @@ section.is-visible {
     font-weight: bold;
 }
 
-.wrapper {
+.products .wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 2rem;
 }
 
-.card {
+.products .card {
     background-color: #081045;
     display: flex;
     flex-direction: column;
@@ -129,22 +129,22 @@ section.is-visible {
     transition: all .9s;
 }
 
-.card.is-visible {
+.products .card.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-.card:hover{
+.products .card:hover{
     border: 2px solid #fff;
     box-shadow: 1px 1px 3px 2px rgb(46, 64, 202)
 }
 
-.card h1{
+.products .card h1{
     font-size: 1.3rem;
     margin-top: 80px;
 }
 
-.card .icon{
+.icon{
     position: absolute;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -162,11 +162,11 @@ section.is-visible {
         100% { box-shadow: 0 0 0 0 rgba(0, 212, 255, 0); }
 }
 
-.card p {
+.products .card p {
     text-align:center;
 }
 
-.card button {
+.products .card button {
             display: inline-block;
             padding: 15px 40px;
             background: linear-gradient(45deg, #00d4ff, #0066ff);
@@ -179,4 +179,30 @@ section.is-visible {
             box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
             position: relative;
             overflow: hidden;
+}
+
+.categories{
+    background-color: #330365;
+    padding: 50px 50px;
+}
+
+.categories .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.categories .card{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    border: 1px solid #fff;
+    min-height: 300px;
+    min-width: 300px;
+    border-radius: 15px;
+    padding: 30px 30px;
+}
+
+.categories .card h3 {
+    margin-top: 30%;
 }
