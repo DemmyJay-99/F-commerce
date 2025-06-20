@@ -150,7 +150,7 @@ section h1{
     margin-bottom: 10px;
     height: 50px;
     width: 50px;
-    padding: 9px;
+    padding: 19px;
     border-radius: 50px;
     background-color: #5f73f5;
     animation: boom 2s infinite ;
@@ -182,7 +182,7 @@ section h1{
 }
 
 .categories{
-    background-color: #330365;
+    background-color: #18062b;
     padding: 50px 50px;
 }
 
@@ -196,13 +196,35 @@ section h1{
     display: flex;
     flex-direction: column;
     place-items: center;
-    border: 1px solid #fff;
-    min-height: 300px;
-    min-width: 300px;
+    border: 1px solid transparent;
+    background-color: #0a1451;
+    min-height: 200px;
+    min-width: 200px;
     border-radius: 15px;
     padding: 30px 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.categories .card:hover{
+    border: 2px solid;
+    background-color: #440d6b;
 }
 
 .categories .card h3 {
     margin-top: 30%;
+}
+
+.center {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    font-size: 32px;
+    border: 2px solid;
+    height: 50px;
+    width: 50px;
+    padding: 25px;
+    border-radius: 50px;
+    background-color: #5f73f5;
+    animation: boom 2s infinite ;
 }
