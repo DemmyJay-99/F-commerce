@@ -2,6 +2,7 @@ footer {
     background: #0a0e27;
     padding: 3rem 2rem 1rem;
     border-top: 1px solid rgba(0, 212, 255, 0.3);
+    height: 100vh;
 }
 
 .footer-content {
@@ -25,4 +26,41 @@ footer {
 }
 .footer-section a:hover {
     color: #00d4ff;
+}
+
+.footer-bottom {
+    display: flex;
+    text-align: center;
+    place-content: center;
+    flex-direction: column;
+}
+
+.footer-bottom h2{
+    font-size: 1.3rem;
+}
+
+.socials {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.socials .social-content {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    padding: 5px;
+    border-radius: 9px;
+    background-color: rgb(97, 25, 89);
+    height: 60px;
+    width: 60px;
+    transition: all .6s;
+}
+
+.socials .social-content:hover{
+    box-shadow: 3px 1px 5px 9px rgba(4, 110, 156, 0.976);
+}
+
+.socials .social-content i{
+    font-size: 3rem;
 }
