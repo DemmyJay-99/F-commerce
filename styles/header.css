@@ -17,7 +17,7 @@ header {
     padding-right: 22px;
 }
 
-header .gadgets, .mobile-menu h3 {
+header .gadgets{
     font-size: 1.8rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -49,7 +49,7 @@ header .gadgets, .mobile-menu h3 {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -4px; /* position right under the text */
+  bottom: -4px;
   width: 0%;
   height: 2px;
   background-color: rgb(45, 79, 202);
@@ -64,40 +64,49 @@ header .gadgets, .mobile-menu h3 {
     color: blue;
 }
 
-summary, li {
-    list-style: none;
-}
-
-hamburger{
-    height: 50px;
-    width: 50px;
-}
-
-.mobile-menu{
+.mobile {
     display: none;
 }
 
-.details-container{
-    display: none;
+.mobile.view{
+    display:inline;
 }
 
-.mobile-menu h3 {
+span {
     display: none;
-}
-
-.details-container{
-    position: relative;
-    left: 95%;
 }
 
 ul {
-    position: absolute;
-    top: 100%;
-    left: 100px;
+    transition: all 0.3s ease-in-out;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
 }
 
-@media (max-width:760px) {
-    .menu{
+li {
+    border-bottom: 1px solid;
+    width: 200vh;
+    display: flex;
+    place-content: center;
+}
+
+li:hover {
+    background-color:  #1800b1; ;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+@media (max-width:768px) {
+    .menu {
         display: none;
+    }
+    span{
+        display: inline;
     }
 }
