@@ -236,10 +236,11 @@ section h1{
 
 .contacts {
     display: flex;
-    padding: 50px 50px;
+    /* padding: 50px 50px; */
     flex-wrap: wrap;
     justify-content: center;
     place-items: center;
+    place-content: center;
     flex-direction: column;
     /* align-items: center; */
 }
@@ -254,6 +255,7 @@ section h1{
 
 .contacts spam{
     text-align: center;
+    max-width: 300px;
 }
 
 .inputs{
