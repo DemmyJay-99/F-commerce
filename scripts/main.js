@@ -1,4 +1,5 @@
   const sections = document.querySelectorAll('section');
+  const fades = document.querySelectorAll('.fade');
   const cards = document.querySelectorAll('.card');
 
   const observer = new IntersectionObserver((entries, observer) => {
@@ -16,6 +17,10 @@
     observer.observe(section);
   });
 
-    cards.forEach(section => {
+      cards.forEach(section => {
+    observer.observe(section);
+  });
+
+    fades.forEach(section => {
     observer.observe(section);
   });
