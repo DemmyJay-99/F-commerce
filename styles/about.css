@@ -264,6 +264,7 @@ section h1{
     place-items: center;
     place-content: center;
     flex-direction: column;
+    background: linear-gradient(60deg, #080e32,#5f73f5);
     /* align-items: center; */
 }
 
