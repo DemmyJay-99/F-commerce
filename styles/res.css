@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+    .products, .categories {
+        padding: 10px 20px;
+    }
+
+    .categories{
+        place-content: center;
+        place-items: center;
+        place-self: center;
+    }
+
+    .categories .card{
+        min-width: 98%;
+    }
+
+    section h1{
+        font-size: 1.4rem;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 440px) {
+    .contacts span{
+        max-width: calc(50px * 6);
+        text-align: center;
+    }
+    .contacts .inputs {
+        max-width: 320px;
+    }
+    .subscribe{
+        width: 320px;
+    }
+}
+
+@media (width: 990px) {
+    .categories .wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        background-color: blanchedalmond;
+    }
+}
