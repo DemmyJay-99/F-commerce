@@ -72,7 +72,7 @@ header .gadgets{
     display:inline;
 }
 
-span {
+.mobile-title{
     display: none;
 }
 
@@ -106,7 +106,11 @@ li a {
     .menu {
         display: none;
     }
-    span{
+    .mobile-title{
         display: inline;
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+        justify-content: space-between;
     }
 }
