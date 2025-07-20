@@ -56,7 +56,7 @@ section.is-visible {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-image: url(../images/593713e5-3a82-49c0-8304-4f7a76ea902a.webp);
+    /* background-image: url(../images/593713e5-3a82-49c0-8304-4f7a76ea902a.webp); */
     align-items: center;
     text-align: center;
     animation: slideup 1s ease-out;
